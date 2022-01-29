@@ -14,7 +14,9 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import { Assignment, Home, Apps, ContactMail } from "@mui/icons-material";
+import { Home, ContactMail } from "@mui/icons-material";
+import LoginIcon from '@mui/icons-material/Login';
+import HowToRegIcon from '@mui/icons-material/HowToReg';
 import logo from "./illust58-451.jpg";
 
 const styled = makeStyles((theme) => ({
@@ -38,11 +40,11 @@ const menuItems = [
     listText: "Home",
   },
   {
-    listIcon: <Assignment />,
+    listIcon: <HowToRegIcon />,
     listText: "Register",
   },
   {
-    listIcon: <Apps />,
+    listIcon: <LoginIcon />,
     listText: "LogIn",
   },
   {
