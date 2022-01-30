@@ -15,8 +15,8 @@ import {
   Box,
 } from "@material-ui/core";
 import { Home, ContactMail } from "@mui/icons-material";
-import LoginIcon from '@mui/icons-material/Login';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
+import LoginIcon from "@mui/icons-material/Login";
+import HowToRegIcon from "@mui/icons-material/HowToReg";
 import logo from "./illust58-451.jpg";
 
 const styled = makeStyles((theme) => ({
@@ -98,31 +98,25 @@ const Navbar = () => {
           >
             {sideList("right")}
           </MobilRightMenuSlider>
-          <Box
-            sx={{ display: "flex", gap: 3, justifyContent: "space-between" }}
-          >
-            <Toolbar>
-              <IconButton onClick={toggleSlider("right", true)}>
-                <Avatar style={{ color: "#fff" }} src={logo} />
-              </IconButton>
-              <Typography
-                variant="h5"
-                style={{ color: "#fff", marginRight: "1300px" }}
-              >
-                MyBoat
-              </Typography>
-              <Box sx={{ display: "flex", gap: 10 }}>
-                {menuItems.map((listItem, key) => (
-                  <ListItem button key={key}>
-                    <ListItemText
-                      className={classes.listItem}
-                      primary={listItem.listText}
-                    />
-                  </ListItem>
-                ))}
-              </Box>
-            </Toolbar>
-          </Box>
+
+          <Toolbar>
+            <IconButton onClick={toggleSlider("right", true)}>
+              <Avatar style={{ color: "#fff" }} src={logo} />
+            </IconButton>
+            <Typography variant="h5" style={{ color: "#fff" }}>
+              MyBoat
+            </Typography>
+            <Box sx={{ display: "flex", gap: 10 }}>
+              {menuItems.map((listItem, key) => (
+                <ListItem button key={key}>
+                  <ListItemText
+                    className={classes.listItem}
+                    primary={listItem.listText}
+                  />
+                </ListItem>
+              ))}
+            </Box>
+          </Toolbar>
         </AppBar>
       </Box>
     </>
