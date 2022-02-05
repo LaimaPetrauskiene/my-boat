@@ -100,12 +100,12 @@ const Navbar = () => {
           </MobilRightMenuSlider>
 
           <Toolbar>
-            <IconButton onClick={toggleSlider("right", true)}>
-              <Avatar style={{ color: "#fff" }} src={logo} />
+            <IconButton onClick={toggleSlider("right", true)} >
+              <Avatar style={{ color: "#fff"}} src={logo} />
+              <Typography variant="h5" style={{ color: "#fff", marginLeft: 10 }}>
+                MyBoat
+              </Typography>
             </IconButton>
-            <Typography variant="h5" style={{ color: "#fff" }}>
-              MyBoat
-            </Typography>
             <Box sx={{ display: "flex", gap: 10 }}>
               {menuItems.map((listItem, key) => (
                 <ListItem button key={key}>
