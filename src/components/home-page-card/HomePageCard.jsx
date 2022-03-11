@@ -1,7 +1,8 @@
 import React from "react";
-import { Paper, Box, TextField, Typography } from "@mui/material";
+import { Paper, Box, Button, Typography } from "@mui/material";
 
 import BasicDatePicker from "./DatePicker";
+import Places from "./Places";
 
 const HomePageCard = () => {
   return (
@@ -31,19 +32,16 @@ const HomePageCard = () => {
             flexDirection: "column",
           }}
         >
-          <TextField
-            sx={{ width: "100%" }}
-            id="outlined-basic"
-            label="Place of departure"
-            variant="outlined"
-          >
-            Place of departure
-          </TextField>
+          <Places />
           <Box sx={{ display: "flex", gap: 3, mb: 2 }}>
             <BasicDatePicker />
             <BasicDatePicker />
           </Box>
         </Box>
+        <Box sx={{display: "flex", justifyContent: "center", pb: 3}}>
+        <Button variant="contained">
+          Continue</Button>
+          </Box>
       </Paper>
     </Box>
   );

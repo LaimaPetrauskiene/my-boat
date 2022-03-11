@@ -10,7 +10,7 @@ import DatePicker from "@mui/lab/DatePicker";
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <DatePicker
-        label="Basic example"
+        label="Dates"
         value={value}
         onChange={(newValue) => {
           setValue(newValue);
