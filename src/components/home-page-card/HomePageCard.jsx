@@ -1,9 +1,9 @@
 import React from "react";
-import { Paper, Box,  Typography } from "@mui/material";
+import { Paper, Box, Typography, Button } from "@mui/material";
 
-import BasicDatePicker from "./DatePicker";
+import BasicDateRangePicker from "./DatePicker";
 import Places from "./Places";
-import ThemeButton from "../ThemeButton"
+
 
 const HomePageCard = () => {
   return (
@@ -35,13 +35,12 @@ const HomePageCard = () => {
         >
           <Places />
           <Box sx={{ display: "flex", gap: 3, mb: 2 }}>
-            <BasicDatePicker />
-            <BasicDatePicker />
+            <BasicDateRangePicker />
           </Box>
         </Box>
-        <Box sx={{display: "flex", justifyContent: "center", pb: 3}}>
-        <ThemeButton/>
-          </Box>
+        <Box sx={{ display: "flex", justifyContent: "center", pb: 3 }}>
+          <Button variant="contained" sx={{borderRadius: 2}}>CONTINUE</Button> 
+        </Box>
       </Paper>
     </Box>
   );
