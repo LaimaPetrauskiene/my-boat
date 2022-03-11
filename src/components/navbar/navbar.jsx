@@ -22,7 +22,7 @@ import logo from "./illust58-451.jpg";
 const styled = makeStyles((theme) => ({
   menuSliderContainer: {
     width: "25vw",
-    background: "#fa9570",
+    background: theme.palette.secondary.main,
     height: "100%",
   },
   avatar: {

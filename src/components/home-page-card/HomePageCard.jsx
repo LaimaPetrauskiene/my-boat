@@ -1,8 +1,9 @@
 import React from "react";
-import { Paper, Box, Button, Typography } from "@mui/material";
+import { Paper, Box,  Typography } from "@mui/material";
 
 import BasicDatePicker from "./DatePicker";
 import Places from "./Places";
+import ThemeButton from "../ThemeButton"
 
 const HomePageCard = () => {
   return (
@@ -39,8 +40,7 @@ const HomePageCard = () => {
           </Box>
         </Box>
         <Box sx={{display: "flex", justifyContent: "center", pb: 3}}>
-        <Button variant="contained">
-          Continue</Button>
+        <ThemeButton/>
           </Box>
       </Paper>
     </Box>
