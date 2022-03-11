@@ -19,7 +19,7 @@ const HomePageCard = () => {
         padding: 2,
       }}
     >
-      <Paper elevation={3}>
+      <Paper elevation={3} sx={{borderRadius: 2}}>
         <Typography variant="h5" sx={{ padding: 2 }}>
           Best solution for your yacht charter
         </Typography>
@@ -40,7 +40,7 @@ const HomePageCard = () => {
           </Box>
         </Box>
         <Box sx={{ display: "flex", justifyContent: "center", pb: 3 }}>
-          <Button variant="contained" sx={{borderRadius: 2, backgroundColor: theme.palette.secondary.main}}>CONTINUE</Button> 
+          <Button variant="contained" sx={{borderRadius: 2, backgroundColor: theme.palette.secondary.main}}>SEARCH</Button> 
         </Box>
       </Paper>
     </Box>

@@ -15,7 +15,7 @@ const ContactsForm = () => {
         padding: 2,
       }}
     >
-      <Paper elevation={3}>
+      <Paper elevation={3} sx={{borderRadius: 2}}>
         <Typography variant="h5" sx={{ padding: 2 }}>
           You can get in touch with us by leaving your message here:
         </Typography>
@@ -25,6 +25,7 @@ const ContactsForm = () => {
             label="Message Text"
             placeholder="Message: max 200 symbols "
             multiline
+            
           />
           <Box sx={{ display: "flex", gap: 2 }}>
             <TextField id="name" label="name" variant="outlined" />
