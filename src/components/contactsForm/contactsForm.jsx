@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Paper, Typography, TextField, Button } from "@mui/material";
-
+import theme from '../../styles/theme'
 
 const ContactsForm = () => {
   return (
@@ -32,7 +32,9 @@ const ContactsForm = () => {
           </Box>
         </Box>
         <Box sx={{ display: "flex", justifyContent: "center", py: 2 }}>
-          <Button variant="contained" sx={{borderRadius: 2}}>SEND</Button>
+          <Button variant="contained" sx={{ borderRadius: 2, backgroundColor: theme.palette.secondary.main }}>
+            SEND
+          </Button>
         </Box>
       </Paper>
     </Box>
