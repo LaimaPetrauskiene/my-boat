@@ -1,29 +1,16 @@
-import React from "react";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import "./app.css";
+import React from 'react';
+import { Provider as ReduxProvider } from 'react-redux';
 
-import { Routes, Route } from "react-router-dom";
+import { CssBaseline } from '@mui/material';
+import store from './store';
+import Router from './routing/router';
 
-import theme from './styles/theme';
-import HomePage from './pages/public-pages/home-page';
-import ContactsPage from './pages/public-pages/contacts-page';
-import LoginPage from './pages/visitor-pages/login-page';
-import RegisterPage from './pages/visitor-pages/register-page'
-
-function App() {
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} />
-
-        </Routes>
-      </CssBaseline>
-    </ThemeProvider>
-  );
-}
+const App = () => (
+  <CssBaseline>
+    <ReduxProvider store={store}>
+      <Router />
+    </ReduxProvider>
+  </CssBaseline>
+);
 
 export default App;

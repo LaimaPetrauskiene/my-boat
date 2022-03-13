@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "../../components/navbar/navbar";
+import Navbar from "../../components/navbar";
 import ContactsForm from "../../components/contacts-form/contactsForm"
 
 const ContactsPage = () => {

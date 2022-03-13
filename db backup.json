@@ -1,0 +1,89 @@
+{
+  "boats": [
+    {
+      "id": "1",
+      "title": "Verbliudas",
+      "boatType": "1",
+      "place": "1",
+      "cabins": "1",
+      "images": [
+        "https://photos.inautia.com/barcosOcasion/9/5/9/4/beneteau-oceanis-46-28706100182257655366555556534566g.jpg",
+        "https://www.nautilussailing.com/wp-content/uploads/2018/12/Beneteau-46.1-Sailing-2.jpg",
+        "https://boatsector.com/wp-content/uploads/2020/02/beneteau-oceanis-46-huge-339656cc482bbb34-63aed188.jpg"
+      ],
+      "price": {
+        "currency": "EUR",
+        "value": 900
+      }
+    },
+    {
+      "id": "2",
+      "title": "Miracle",
+      "boatType": "1",
+      "place": "2",
+      "cabins": "2",
+      "images": [
+        "https://www.yachtsys.com/getattachment/YachtSys-Blog/June-2019/The-10-Most-Popular-Monohull-Sailing-Yachts-of-the/bavaria-cruiser-41-800.jpg.aspx",
+        "https://www.yachtsys.com/getattachment/YachtSys-Blog/June-2019/The-10-Most-Popular-Monohull-Sailing-Yachts-of-the/bavaria-46-cruiser-800.jpg.aspx",
+        "https://www.bavariayachts.com/fileadmin/_processed_/0/d/csm_bavaria-sy-cline-overview-c45-freisteller_73e7ed491b.jpg"
+      ],
+      "price": {
+        "currency": "EUR",
+        "value": 1000
+      }
+    },
+    {
+      "id": "3",
+      "title": "FairyTail",
+      "boatType": "2",
+      "place": "3",
+      "cabins": "3",
+      "images": [
+        "https://asa.com/wordpress/wp-content/uploads/2013/01/News-2013-01-Catamaran.jpg",
+        "http://features.boats.com/boat-content/files/2015/07/Leopard-48-Sailing.jpg",
+        "https://www.discoverboating.com/sites/default/files/inline-images/sailing-catamaran-boats.jpg"
+      ],
+      "price": {
+        "currency": "EUR",
+        "value": 1500
+      }
+    },
+    {
+      "id": "4",
+      "title": "Queen of the Seas",
+      "boatType": "2",
+      "place": "2",
+      "cabins": "4",
+      "images": [
+        "https://asa.com/wordpress/wp-content/uploads/2013/01/News-2013-01-Catamaran.jpg",
+        "http://features.boats.com/boat-content/files/2015/07/Leopard-48-Sailing.jpg",
+        "https://www.discoverboating.com/sites/default/files/inline-images/sailing-catamaran-boats.jpg"
+      ],
+      "price": {
+        "currency": "EUR",
+        "value": 2000
+      }
+    }
+  ],
+  "boatTypes": [
+    {
+      "id": "1",
+      "title": "Monohull"
+    },
+    {
+      "id": "2",
+      "title": "Catamaran"
+    }
+  ],
+  "places": [
+    { "id": "1", "title": "Greece" },
+    { "id": "2", "title": "Italy" },
+    { "id": "3", "title": "Canary Islands" }
+  ],
+  "cabins": [
+    { "id": "1", "numberOfCabins": "2" },
+    { "id": "2", "numberOfCabins": "3" },
+    { "id": "3", "numberOfCabins": "4" },
+    { "id": "4", "numberOfCabins": "5" }
+  ]
+}
